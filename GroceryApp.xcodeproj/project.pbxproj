@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9BA5AF2A0EC20E00DFA53E /* GroceryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5AE2A0EC20E00DFA53E /* GroceryAppApp.swift */; };
+		1F9BA5B32A0EC20F00DFA53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BA5B22A0EC20F00DFA53E /* Assets.xcassets */; };
+		1F9BA5B62A0EC20F00DFA53E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BA5B52A0EC20F00DFA53E /* Preview Assets.xcassets */; };
+		1F9BA5CF2A0EC3A700DFA53E /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5C32A0EC3A700DFA53E /* ShoppingItem.swift */; };
+		1F9BA5D02A0EC3A700DFA53E /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5C42A0EC3A700DFA53E /* ShoppingList.swift */; };
+		1F9BA5D12A0EC3A700DFA53E /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5C62A0EC3A700DFA53E /* Migrator.swift */; };
+		1F9BA5D22A0EC3A700DFA53E /* AddShoppingListItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5C82A0EC3A700DFA53E /* AddShoppingListItemScreen.swift */; };
+		1F9BA5D32A0EC3A700DFA53E /* ShoppingListItemsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5C92A0EC3A700DFA53E /* ShoppingListItemsScreen.swift */; };
+		1F9BA5D42A0EC3A700DFA53E /* AddShoppingListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5CA2A0EC3A700DFA53E /* AddShoppingListScreen.swift */; };
+		1F9BA5D52A0EC3A700DFA53E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5CB2A0EC3A700DFA53E /* ContentView.swift */; };
+		1F9BA5D62A0EC3A700DFA53E /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5CD2A0EC3A700DFA53E /* CategoryFilterView.swift */; };
+		1F9BA5D72A0EC3A700DFA53E /* ShoppingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5CE2A0EC3A700DFA53E /* ShoppingItemCell.swift */; };
+		1F9BA5DA2A0EC4A300DFA53E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9BA5D92A0EC4A300DFA53E /* Realm */; };
+		1F9BA5DC2A0EC4A400DFA53E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9BA5DB2A0EC4A300DFA53E /* RealmSwift */; };
+		1F9BA5DF2A0ED47400DFA53E /* CollectionsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BA5DE2A0ED47400DFA53E /* CollectionsExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F9BA5AB2A0EC20E00DFA53E /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9BA5AE2A0EC20E00DFA53E /* GroceryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryAppApp.swift; sourceTree = "<group>"; };
+		1F9BA5B22A0EC20F00DFA53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9BA5B52A0EC20F00DFA53E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F9BA5C32A0EC3A700DFA53E /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		1F9BA5C42A0EC3A700DFA53E /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		1F9BA5C62A0EC3A700DFA53E /* Migrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		1F9BA5C82A0EC3A700DFA53E /* AddShoppingListItemScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShoppingListItemScreen.swift; sourceTree = "<group>"; };
+		1F9BA5C92A0EC3A700DFA53E /* ShoppingListItemsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItemsScreen.swift; sourceTree = "<group>"; };
+		1F9BA5CA2A0EC3A700DFA53E /* AddShoppingListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShoppingListScreen.swift; sourceTree = "<group>"; };
+		1F9BA5CB2A0EC3A700DFA53E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F9BA5CD2A0EC3A700DFA53E /* CategoryFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
+		1F9BA5CE2A0EC3A700DFA53E /* ShoppingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemCell.swift; sourceTree = "<group>"; };
+		1F9BA5DE2A0ED47400DFA53E /* CollectionsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F9BA5A82A0EC20E00DFA53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9BA5DC2A0EC4A400DFA53E /* RealmSwift in Frameworks */,
+				1F9BA5DA2A0EC4A300DFA53E /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9BA5A22A0EC20E00DFA53E = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5AD2A0EC20E00DFA53E /* GroceryApp */,
+				1F9BA5AC2A0EC20E00DFA53E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F9BA5AC2A0EC20E00DFA53E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5AB2A0EC20E00DFA53E /* GroceryApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F9BA5AD2A0EC20E00DFA53E /* GroceryApp */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5C12A0EC25B00DFA53E /* AppEntryPoint */,
+				1F9BA5DD2A0ED46500DFA53E /* Extensions */,
+				1F9BA5C22A0EC3A700DFA53E /* Models */,
+				1F9BA5C72A0EC3A700DFA53E /* Screens */,
+				1F9BA5CC2A0EC3A700DFA53E /* Views */,
+				1F9BA5C52A0EC3A700DFA53E /* Utils */,
+				1F9BA5B22A0EC20F00DFA53E /* Assets.xcassets */,
+				1F9BA5B42A0EC20F00DFA53E /* Preview Content */,
+			);
+			path = GroceryApp;
+			sourceTree = "<group>";
+		};
+		1F9BA5B42A0EC20F00DFA53E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5B52A0EC20F00DFA53E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F9BA5C12A0EC25B00DFA53E /* AppEntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5AE2A0EC20E00DFA53E /* GroceryAppApp.swift */,
+			);
+			path = AppEntryPoint;
+			sourceTree = "<group>";
+		};
+		1F9BA5C22A0EC3A700DFA53E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5C32A0EC3A700DFA53E /* ShoppingItem.swift */,
+				1F9BA5C42A0EC3A700DFA53E /* ShoppingList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F9BA5C52A0EC3A700DFA53E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5C62A0EC3A700DFA53E /* Migrator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1F9BA5C72A0EC3A700DFA53E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5CB2A0EC3A700DFA53E /* ContentView.swift */,
+				1F9BA5CA2A0EC3A700DFA53E /* AddShoppingListScreen.swift */,
+				1F9BA5C82A0EC3A700DFA53E /* AddShoppingListItemScreen.swift */,
+				1F9BA5C92A0EC3A700DFA53E /* ShoppingListItemsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1F9BA5CC2A0EC3A700DFA53E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5CD2A0EC3A700DFA53E /* CategoryFilterView.swift */,
+				1F9BA5CE2A0EC3A700DFA53E /* ShoppingItemCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F9BA5DD2A0ED46500DFA53E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BA5DE2A0ED47400DFA53E /* CollectionsExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F9BA5AA2A0EC20E00DFA53E /* GroceryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9BA5B92A0EC20F00DFA53E /* Build configuration list for PBXNativeTarget "GroceryApp" */;
+			buildPhases = (
+				1F9BA5A72A0EC20E00DFA53E /* Sources */,
+				1F9BA5A82A0EC20E00DFA53E /* Frameworks */,
+				1F9BA5A92A0EC20E00DFA53E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroceryApp;
+			packageProductDependencies = (
+				1F9BA5D92A0EC4A300DFA53E /* Realm */,
+				1F9BA5DB2A0EC4A300DFA53E /* RealmSwift */,
+			);
+			productName = GroceryApp;
+			productReference = 1F9BA5AB2A0EC20E00DFA53E /* GroceryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F9BA5A32A0EC20E00DFA53E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1F9BA5AA2A0EC20E00DFA53E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F9BA5A62A0EC20E00DFA53E /* Build configuration list for PBXProject "GroceryApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F9BA5A22A0EC20E00DFA53E;
+			packageReferences = (
+				1F9BA5D82A0EC4A300DFA53E /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = 1F9BA5AC2A0EC20E00DFA53E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F9BA5AA2A0EC20E00DFA53E /* GroceryApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F9BA5A92A0EC20E00DFA53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9BA5B62A0EC20F00DFA53E /* Preview Assets.xcassets in Resources */,
+				1F9BA5B32A0EC20F00DFA53E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F9BA5A72A0EC20E00DFA53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9BA5D72A0EC3A700DFA53E /* ShoppingItemCell.swift in Sources */,
+				1F9BA5CF2A0EC3A700DFA53E /* ShoppingItem.swift in Sources */,
+				1F9BA5D32A0EC3A700DFA53E /* ShoppingListItemsScreen.swift in Sources */,
+				1F9BA5D62A0EC3A700DFA53E /* CategoryFilterView.swift in Sources */,
+				1F9BA5D02A0EC3A700DFA53E /* ShoppingList.swift in Sources */,
+				1F9BA5D42A0EC3A700DFA53E /* AddShoppingListScreen.swift in Sources */,
+				1F9BA5DF2A0ED47400DFA53E /* CollectionsExtensions.swift in Sources */,
+				1F9BA5D22A0EC3A700DFA53E /* AddShoppingListItemScreen.swift in Sources */,
+				1F9BA5D52A0EC3A700DFA53E /* ContentView.swift in Sources */,
+				1F9BA5D12A0EC3A700DFA53E /* Migrator.swift in Sources */,
+				1F9BA5AF2A0EC20E00DFA53E /* GroceryAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F9BA5B72A0EC20F00DFA53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F9BA5B82A0EC20F00DFA53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F9BA5BA2A0EC20F00DFA53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroceryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UTG2V2H3FK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.deltaapps.GroceryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F9BA5BB2A0EC20F00DFA53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GroceryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UTG2V2H3FK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.deltaapps.GroceryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F9BA5A62A0EC20E00DFA53E /* Build configuration list for PBXProject "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9BA5B72A0EC20F00DFA53E /* Debug */,
+				1F9BA5B82A0EC20F00DFA53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F9BA5B92A0EC20F00DFA53E /* Build configuration list for PBXNativeTarget "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9BA5BA2A0EC20F00DFA53E /* Debug */,
+				1F9BA5BB2A0EC20F00DFA53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F9BA5D82A0EC4A300DFA53E /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.39.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F9BA5D92A0EC4A300DFA53E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9BA5D82A0EC4A300DFA53E /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		1F9BA5DB2A0EC4A300DFA53E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9BA5D82A0EC4A300DFA53E /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1F9BA5A32A0EC20E00DFA53E /* Project object */;
+}
