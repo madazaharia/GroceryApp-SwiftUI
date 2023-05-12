@@ -5,11 +5,12 @@
 //  Created by Madalin Zaharia on 12.05.2023.
 //
 
-import SwiftUI
 import RealmSwift
+import SwiftUI
 
 struct ShoppingListItemsScreen: View {
     
+    // MARK: - Properties
     @ObservedRealmObject var shoppingList: ShoppingList
     @State private var isPresented: Bool = false
     @State private var selectedItemIds: [ObjectId] = []
@@ -26,6 +27,7 @@ struct ShoppingListItemsScreen: View {
         }
     }
     
+    // MARK: - Drawing
     var body: some View {
         VStack {
             CategoryFilterView(selectedCategory: $selectedCategory)
@@ -34,24 +36,7 @@ struct ShoppingListItemsScreen: View {
             if items.isEmpty {
                 Text("No items found.")
             } else {
-                List {
-                    ForEach(items) { item in
-                        NavigationLink {
-                            AddShoppingListItemScreen(shoppingList: shoppingList, itemToEdit: item)
-                        } label: {
-                            ShoppingItemCell(item: item, selected: selectedItemIds.contains(item.id)) { selected in
-                                if selected {
-                                    selectedItemIds.append(item.id)
-                                    if let indexToDelete = shoppingList.items.firstIndex(where: { $0.id == item.id }) {
-                                        // delete the item
-                                        $shoppingList.items.remove(at: indexToDelete)
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .onDelete(perform: $shoppingList.items.remove)
-                }
+                shoppingListView
             }
             
             Spacer()
@@ -69,6 +54,27 @@ struct ShoppingListItemsScreen: View {
         }
         .sheet(isPresented: $isPresented) {
             AddShoppingListItemScreen(shoppingList: shoppingList)
+        }
+    }
+    
+    private var shoppingListView: some View {
+        List {
+            ForEach(items) { item in
+                NavigationLink {
+                    AddShoppingListItemScreen(shoppingList: shoppingList, itemToEdit: item)
+                } label: {
+                    ShoppingItemCell(item: item, selected: selectedItemIds.contains(item.id)) { selected in
+                        if selected {
+                            selectedItemIds.append(item.id)
+                            if let indexToDelete = shoppingList.items.firstIndex(where: { $0.id == item.id }) {
+                                // delete the item
+                                $shoppingList.items.remove(at: indexToDelete)
+                            }
+                        }
+                    }
+                }
+            }
+            .onDelete(perform: $shoppingList.items.remove)
         }
     }
 }

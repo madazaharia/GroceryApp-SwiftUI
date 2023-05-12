@@ -21,20 +21,7 @@ struct ContentView: View {
                 if shoppingLists.isEmpty {
                     Text("No shopping lists!")
                 } else {
-                    List {
-                        ForEach(shoppingLists, id: \.id) { shoppingList in
-                            NavigationLink {
-                                ShoppingListItemsScreen(shoppingList: shoppingList)
-                            } label: {
-                                VStack(alignment: .leading) {
-                                    Text(shoppingList.title)
-                                    Text(shoppingList.address)
-                                        .opacity(0.4)
-                                }
-                            }
-                        }
-                        .onDelete(perform: $shoppingLists.remove)
-                    }
+                    shoppingListsView
                 }
             }
             .navigationTitle("Grocery App")
@@ -51,6 +38,23 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+    }
+    
+    private var shoppingListsView: some View {
+        List {
+            ForEach(shoppingLists, id: \.id) { shoppingList in
+                NavigationLink {
+                    ShoppingListItemsScreen(shoppingList: shoppingList)
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text(shoppingList.title)
+                        Text(shoppingList.address)
+                            .opacity(0.4)
+                    }
+                }
+            }
+            .onDelete(perform: $shoppingLists.remove)
         }
     }
 }

@@ -20,13 +20,19 @@ struct AddShoppingListItemScreen: View {
     @State private var quantity: String = ""
     @State private var selectedCategory = ""
     
-    let columns = [GridItem(.flexible()), GridItem(.flexible()),GridItem(.flexible())]
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     let data = ["Produce", "Fruit", "Meat", "Condiments", "Beverages", "Snacks", "Dairy"]
     
     private var isEditing: Bool {
         itemToEdit == nil ? false : true
     }
     
+    // MARK: - Init
     init(shoppingList: ShoppingList, itemToEdit: ShoppingItem? = nil) {
         self.shoppingList = shoppingList
         self.itemToEdit = itemToEdit
@@ -69,28 +75,31 @@ struct AddShoppingListItemScreen: View {
             TextField("Quantity", text: $quantity)
                 .textFieldStyle(.roundedBorder)
             
-            Button {
-                // save or update the item
-                if let _ = itemToEdit {
-                    // update
-                    update()
-                } else {
-                    // save
-                    save()
-                }
-                
-                dismiss()
-            } label: {
-                Text(isEditing ? "Update" : "Save")
-                    .frame(maxWidth: .infinity, maxHeight: 40)
-            }
-            .buttonStyle(.bordered)
-            .padding(.top, 20)
-            
+            button
             Spacer()
         }
         .padding()
         .navigationTitle(isEditing ? "Update Item" : "Add Item")
+    }
+    
+    private var button: some View {
+        Button {
+            // save or update the item
+            if let _ = itemToEdit {
+                // update
+                update()
+            } else {
+                // save
+                save()
+            }
+            
+            dismiss()
+        } label: {
+            Text(isEditing ? "Update" : "Save")
+                .frame(maxWidth: .infinity, maxHeight: 40)
+        }
+        .buttonStyle(.bordered)
+        .padding(.top, 20)
     }
     
     private func save() {

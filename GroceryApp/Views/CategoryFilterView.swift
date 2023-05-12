@@ -12,6 +12,7 @@ struct CategoryFilterView: View {
     let categories = ["All", "Produce", "Fruit", "Meat", "Condiments", "Beverages", "Snacks", "Dairy"]
     @Binding var selectedCategory: String
     
+    // MARK: - Drawing
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {

@@ -5,11 +5,12 @@
 //  Created by Madalin Zaharia on 12.05.2023.
 //
 
-import SwiftUI
 import RealmSwift
+import SwiftUI
 
 struct AddShoppingListScreen: View {
     
+    // MARK: - Properties
     @State private var title: String = ""
     @State private var address: String = ""
     
@@ -17,28 +18,33 @@ struct AddShoppingListScreen: View {
     
     @Environment(\.dismiss) private var dismiss
     
+    // MARK: - Drawing
     var body: some View {
         NavigationView {
             Form {
                 TextField("Enter title", text: $title)
                 TextField("Enter address", text: $address)
                 
-                Button {
-                    // create a shopping list record
-                    let shoppingList = ShoppingList()
-                    shoppingList.title = title
-                    shoppingList.address = address
-                    $shoppingLists.append(shoppingList)
-                    
-                    dismiss()
-                } label: {
-                    Text("Save")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.bordered)
+                saveButton
             }
             .navigationTitle("New List")
         }
+    }
+    
+    private var saveButton: some View {
+        Button {
+            // create a shopping list record
+            let shoppingList = ShoppingList()
+            shoppingList.title = title
+            shoppingList.address = address
+            $shoppingLists.append(shoppingList)
+            
+            dismiss()
+        } label: {
+            Text("Save")
+                .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.bordered)
     }
 }
 

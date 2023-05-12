@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ShoppingItemCell: View {
     
+    // MARK: - Drawing
     let item: ShoppingItem
     var selected: Bool
     let isSelected: (Bool) -> Void
     
+    // MARK: - Drawing
     var body: some View {
         HStack {
             Image(systemName: selected ? "checkmark.square": "square")
